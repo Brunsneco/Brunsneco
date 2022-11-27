@@ -16,7 +16,7 @@
 
 ```bash
 # Pegue o código
-git clone https://github.com/
+git clone https://github.com/Brunsneco/Brunsneco.git
 cd Brunsneco | BS
 
 # Instale os módulos requeridos
@@ -42,19 +42,53 @@ Dentro do download você irá encontrar os seguintes diretórios e arquivos:
     |   |
     |   |-- static/
     |   |   |
-    |   |   |-- css/
+    |   |   |-- assets/
     |   |   |   |
-    |   |   |   |--
-    |   |   |-- img/
+    |   |   |   |
+    |   |   |   |-- css/
+    |   |   |   |   |-- style.css
+    |   |   |   |   |-- styleHome.css
+    |   |   |   |    
+    |   |   |   |-- img/
+    |   |   |   |   |-- linkedin.png
+    |   |   |   |   |-- lobo (3).png
+    |   |   |   |   |-- lobo.png
+    |   |   |   |   |-- logotipo-do-instagram.png
+    |   |   |   |   |-- placa-do-github.png
+    |   |   |   |   |-- programacao-da-web.png
+    |   |   |
+    |   |   |
     |   |-- templates/
-    |   | 
-    |   |-- app.py
+    |   |   |-- cadastro.html
+    |   |   |-- edit.html
+    |   |   |-- home.html
+    |   |   |-- login.html
+    |   |   |-- show_entries.html
+    |   |
+    |   |--app.py  
     |
     |
-    |
+    |-- DB_Cadastro.db
+    |-- README.md
     |-- requirements.txt
-    |-- Readme.md
-
+    |-- runtime.txt
+    |-- Schema.sql
     
 
 ```
+## Social Media
+
+
+- Instagram: <https://www.instagram.com/brunsneco/>
+- Linkedin: <https://www.linkedin.com/in/bruno-s-19432b92/>
+- Facebook: <https://www.facebook.com/brunsneco/>
+- GitHub: <https://github.com/Brunsneco>
+
+
+
+
+---
+
+
+Aplicação produzida por Bruno Ribeiro dos Santos
+
