@@ -56,8 +56,8 @@ Dentro do download você irá encontrar os seguintes diretórios e arquivos:
     |   |   |   |   |-- logotipo-do-instagram.png
     |   |   |   |   |-- placa-do-github.png
     |   |   |   |   |-- programacao-da-web.png
-    |   |   |
-    |   |   |
+    |   |
+    |   |
     |   |-- templates/
     |   |   |-- cadastro.html
     |   |   |-- edit.html
