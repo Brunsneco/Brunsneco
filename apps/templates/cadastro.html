@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunsneco | BS</title>
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/style.css">
+    <link rel="icon" type="image/png" href="../static/assets/img/lobo.png">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo"><img src="../static/assets/img/lobo (3).png"></div>
+            <div class="menu">
+                <a href="home">Home</a>
+                <a href="logout">Logout</a>
+            </div>
+        </div>
+
+    </header>
+    <section class="sobre">
+        <div class="extras">
+            <img class="WEB" src="../static/assets/img/programacao-da-web.png">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/bruno-s-19432b92/"><img
+                        src="../static/assets/img/linkedin.png"></a>
+                <a href="https://github.com/Brunsneco"><img src="../static/assets/img/placa-do-github.png"></a>
+                <a href="https://www.instagram.com/brunsneco/"><img
+                        src="../static/assets/img/logotipo-do-instagram.png"></a>
+            </div>
+        </div>
+    </section>
+    <div class="Box">
+        <form action="" method="post">
+            <fieldset>
+                <legend><b>Formulário de Clientes</b></legend>
+                <br>
+                {% if falha %}<p class=falha><strong>Error:</strong> {{ falha }}{% endif %}
+                <div class="InputBox">
+                    <input type="text" name="nome" id="nome" class="InputUser" required>
+                    <label for="nome" class="LabelInput">Nome Completo</label><br><br>
+                </div>
+                <div class="InputBox">
+                    <input type="email" name="email" id="email" class="InputUser" required>
+                    <label for="email" class="LabelInput">E-mail</label><br><br>
+                </div>
+                <div class="InputBox">
+                    <input type="tel" name="telefone" id="telefone" class="InputUser" required>
+                    <label for="telefone" class="LabelInput">Telefone</label><br><br>
+                </div>
+                <div class="sexo">
+                    <p>Sexo:</p>
+                    <input type="radio" name="genero" id="feminino" value="feminino" required>
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" name="genero" id="masculino" value="masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" name="genero" id="outro" value="outro" required>
+                    <label for="outro">Outro</label>
+                    <br><br>
+                    <label for="DataNascimento" style="color:rgb(13, 143, 37);"><b>Ano de Nascimento: </b> </label>
+                    <input type="date" name="nascimento" id="DataNascimento" required><br>
+                    <br>
+                </div>
+                <div class="InputBox">
+                    <input type="text" name="cidade" id="cidade" class="InputUser" required>
+                    <label for="cidade" class="LabelInput">Cidade</label><br><br>
+                </div>
+                <div class="InputBox">
+                    <input type="estado" name="estado" id="estado" class="InputUser" required>
+                    <label for="estado" class="LabelInput">Estado</label><br><br>
+                </div>
+                <div class="InputBox">
+                    <input type="endereco" name="endereco" id="endereco" class="InputUser" required>
+                    <label for="endereco" class="LabelInput">Endereço</label><br><br><br>
+                </div>
+                <div class="InputBox">
+                    <input type="text" name="user" id="user" class="InputUser" required>
+                    <label for="user" class="LabelInput">Usuário</label><br><br>
+                </div>
+                <div class="InputBox">
+                    <input type="password" name="pass" id="pass" class="InputUser" required>
+                    <label for="pass" class="LabelInput">Senha</label><br><br>
+                </div>
+                <div class="InputBox">
+                    <input type="password" name="passConfirm" id="passConfirm" class="InputUser" required>
+                    <label for="passConfirm" class="LabelInput">Confirme sua Senha</label><br><br>
+                </div>
+
+
+                <div>
+                    <input type="submit" value="enviar" id="submit">
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>

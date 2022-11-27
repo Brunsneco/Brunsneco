@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.center{ 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.logo{
+    width: 40%;
+}
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+.menu{
+    padding-top: 30px;
+    width: 60%;
+    text-align: right;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+.extras{
+    border-radius: 100% 0% 0% 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 550px;
+    height: 450px;
+    background-color: #017143;
+
+}
+
+.Box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(1,113,67,0.5);
+    padding: 20px;
+    border-radius: 5px;
+    width: 450px;
+}
+fieldset{
+    border: none;
+}
+legend{
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: rgb(13, 143, 37);
+}
+.InputBox{
+    position: relative;
+    margin-left: 40px;
+}
+.InputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 80%;
+    letter-spacing: 2px;
+    
+}
+.LabelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+    
+}
+.InputUser:focus ~ .LabelInput,
+.InputUser:valid ~ .LabelInput{
+
+    top: -20px;
+    font-size: 12px;
+    color: rgb(13, 143, 37);
+
+}
+
+#DataNascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    
+    
+}
+#submit{
+    background-color: #017143;
+    border: none;
+    width: 90%;
+    padding: 17px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 20px;   
+}
+.sexo{
+    margin-left: 40px;
+}
+a:hover{
+    color: #22ee99;
+    border-bottom: 1px solid black;
+}
+.WEB{
+    position: absolute;
+   left: 150;
+   width: 70%;
+   top:  0;
+   bottom: 0;
+}
+.social-media{
+    position: absolute;
+    margin: 30px;
+    right: 0;
+    top: 40px;
+}
+.social-media img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    display: block;
+
+    
+}
+.card{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(1,113,67,0.5);
+    margin: -80px 40%;
+    padding: 50px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.card-default{
+    font-size: 13px;
+    font: bold;
+    color: #484b4a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form-group{
+    margin: 20px 0;
+    color: #484b4a;
+    display: block;
+    text-align: left;
+}
+.form-control{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #c2eedf;
+    color: black;
+    width: 250px;
+    text-align: center;
+}
+.card-footer{
+    text-align: center;
+    
+}
+.text-cadastro{
+    text-decoration: none;
+}
+.btn-login{
+    padding: 8px;
+    width: 250px;
+    background-color: #017143;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px rgba(39, 38, 38, 0.247);
+
+}
+.btn-login:hover{
+    box-shadow: none;
+}
+
+.flash{
+    background: #cee5F5;
+    padding: 0.5em;
+    border: 1px solid #aacbe2;
+    text-align: center;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    background:rgba(233, 49, 49, 0.247);
+    padding: 10px;
+    border-radius: 5px;
+}
+.falha{
+    color: red;
+    text-align: center;
+    background:rgba(233, 49, 49, 0.247);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dados{
+    position: absolute;
+    margin: -10% 30%;
+    border-radius: 10px;
+    background-color: rgba(1,113,67,0.5);
+    padding: 20px;
+    width: 500px;
+    overflow-y: auto;
+    height: 110%;
+}
+
+.dados::-webkit-scrollbar{
+    width: 10px;
+}
+.dados::-webkit-scrollbar-track{
+    background:rgba(1,113,67,0.1) ;
+    border-radius: 10px;
+}
+.dados::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #484b4a;
+}
+.entries{
+    
+    position: relative;
+    background-color: #484b4a;
+    border-radius: 10px;
+    padding: 7px;
+    width: 100%;
+    text-align: justify;
+    
+}
+li{
+    font-size: 10px;
+    list-style: none;
+    background-color: #cee5F5;
+    padding-left: 20px;
+    border-bottom: #017143 4px solid;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+.excluir_btn{
+    margin-left: 10px;
+    font-size: 10px;
+    text-align: left;
+    color: #db4921    ;
+    text-decoration: none;
+    background-color: #cee5F5;
+    border: none;
+    margin-bottom: 3px;
+    cursor: pointer;
+    
+}
+.excluir_btn:hover{
+    color: #f85300;
+}
+.edit_btn{
+    text-decoration: none;
+    color: #06a771;
+    margin-left: 78%;
+    font-size: 10px;
+}
+.configuration{
+    display: flex;
+    justify-content: space-around;
+}
+.edit_btn:hover{
+    border: none;
+}
+.card_edit{
+    padding: 10px;
+    margin-left: 25%;
+    margin-top: 30px;
+    
+  
+}
+.titulo_edit{
+    text-align: center;
+    padding-top: 10px;
+    margin: 20px;
+}
+.inputs_edit{
+    border-radius: 2px;
+    padding: 4px;
+    border: none;
+    text-align: center;
+}
+.label_edit{
+    padding: 10px;
+    text-align: center;
+    color: #017143;
+}
+.btn_edit{
+   padding: 10px;
+   border: none;
+   border-radius: 3px;
+   background-color: #06a771;
+   width: 190px;
+   cursor: pointer;
+}

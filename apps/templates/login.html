@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <link rel="icon" type="image/png" href="../static/assets/img/lobo.png">
+    <title>Brunsneco | BS</title>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo"><img src="../static/assets/img/lobo (3).png"></div>
+            <div class="menu">
+                <a href="cadastro">Registre-se</a>
+                <a href="logout">Logout</a>
+            </div>
+        </div>
+    </header>
+    <section class="sobre">
+        <div class="extras">
+            <img class="WEB" src="../static/assets/img/programacao-da-web.png">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/bruno-s-19432b92/"><img
+                        src="../static/assets/img/linkedin.png"></a>
+                <a href="https://github.com/Brunsneco"><img src="../static/assets/img/placa-do-github.png"></a>
+                <a href="https://www.instagram.com/brunsneco/"><img
+                        src="../static/assets/img/logotipo-do-instagram.png"></a>
+            </div>
+        </div>
+        <div class="login">
+            <div class="card">
+                <form role="form" method="post">
+                    <div class="card-header">
+                        <h5 class="title">Login</h5>
+                        <h6 class="card-default">
+                            Credencial de acesso: test / pass
+                        </h6>
+                    {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 px-md-1">
+                                <div class="form-group">
+                                    <label>Usuário</label><br>
+                                    <input class="form-control" placeholder="Usuário" type="text" name="username" value="{{request.form.username}}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 px-md-1">
+                                <div class="form-group">
+                                    <label>Senha</label><br>
+                                    <input class="form-control" placeholder="Senha" type="password" name="password" value="{{request.form.password}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" name="login" class="btn-login">Login</button><br><br>
+                        <p> Não tem conta? <a href="/cadastro" class="text-cadastro">Cadastre-se</a></p>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+</body>
+
+</html>
