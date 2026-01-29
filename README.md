@@ -5,7 +5,7 @@
 Atualmente trabalho em um ambiente focado em tecnologia e inovação, onde busco integrar meus conhecimentos de hardware com o desenvolvimento de software.
 
 - 🎓 Cursando Graduação em Eletrônica.
-- 💻 No momento, estou focado em aprimorar minhas habilidades em **C++**, **Git/GitHub**, **Robótica**, **Python** **etc...**.
+- 💻 No momento, estou focado em aprimorar minhas habilidades em **C++,** **Git/GitHub,** **Robótica,** **Python** **etc...**.
 - 📊 Interessado em matemática aplicada, especificamente **EDOs** e **Transformadas de Laplace** aplicadas a circuitos.
 - 🧠 Praticante de Gestão do Conhecimento Pessoal usando o **Obsidian**.
 ---
